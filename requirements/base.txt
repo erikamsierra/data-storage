@@ -1,0 +1,7 @@
+Django==1.11.3
+psycopg2==2.7.1
+requests==2.13.0
+gunicorn==19.7.1
+djangorestframework==3.6.3
+python-dateutil==2.6.0
+django-mptt==0.8.7

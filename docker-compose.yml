@@ -1,0 +1,29 @@
+ds:
+  build: .
+  command: ./ds-ctl runserver 0.0.0.0:8000
+  environment:
+    ENV: "dev"
+    COUNTRY: "UK"
+    DATABASE_URL: "postgres://dsuser:dspass@db:5432/dsdb"
+  ports:
+    - "8000:8000"
+  volumes:
+    - .:/srv
+  links:
+    - db
+
+data:
+  image: sameersbn/postgresql:9.6-2
+  command: "/bin/true"
+  volumes:
+    - "/var/lib/postgresql"
+
+db:
+  image: sameersbn/postgresql:9.6-2
+  environment:
+    DEBUG: 'false'
+    DB_USER: 'dsuser'
+    DB_PASS: 'dspass'
+    DB_NAME: 'dsdb'
+  volumes_from:
+    - data

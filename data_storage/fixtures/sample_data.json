@@ -1,0 +1,646 @@
+[
+{
+    "model": "data_storage.athlete",
+    "pk": 1,
+    "fields": {
+        "full_name": "Anna Gasser",
+        "birth_date": "1991-08-16",
+        "skills": [
+            4,
+            6
+        ],
+        "championships": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 2,
+    "fields": {
+        "full_name": "Tess Ledeux",
+        "birth_date": "2001-11-23",
+        "skills": [
+            5
+        ],
+        "championships": [
+            9,
+            10
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 3,
+    "fields": {
+        "full_name": "Nairo Quintana",
+        "birth_date": "1990-02-04",
+        "skills": [
+            8
+        ],
+        "championships": [
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 4,
+    "fields": {
+        "full_name": "Louis Smith",
+        "birth_date": "1983-07-04",
+        "skills": [
+            26
+        ],
+        "championships": [
+            23,
+            24
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 5,
+    "fields": {
+        "full_name": "Elizabeth Morrison",
+        "birth_date": "1980-12-12",
+        "skills": [
+            10,
+            14,
+            15
+        ],
+        "championships": [
+            20,
+            21
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 6,
+    "fields": {
+        "full_name": "Philip Fast",
+        "birth_date": "1979-03-01",
+        "skills": [
+            23,
+            24
+        ],
+        "championships": [
+            18,
+            20
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 7,
+    "fields": {
+        "full_name": "Mike Runner",
+        "birth_date": "1975-10-14",
+        "skills": [
+            21,
+            24,
+            22
+        ],
+        "championships": [
+            20,
+            21
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 8,
+    "fields": {
+        "full_name": "Lilly Smith",
+        "birth_date": "2001-04-15",
+        "skills": [
+            10,
+            15
+        ],
+        "championships": [
+            17
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 9,
+    "fields": {
+        "full_name": "Rick Rock",
+        "birth_date": "1997-07-06",
+        "skills": [
+            26
+        ],
+        "championships": [
+            22
+        ]
+    }
+},
+{
+    "model": "data_storage.athlete",
+    "pk": 10,
+    "fields": {
+        "full_name": "Elizabeth Morrison",
+        "birth_date": "1982-07-04",
+        "skills": [
+            17,
+            18
+        ],
+        "championships": [
+            18,
+            20
+        ]
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 3,
+    "fields": {
+        "name": "winter sports",
+        "parent": null,
+        "lft": 1,
+        "rght": 12,
+        "tree_id": 1,
+        "level": 0
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 4,
+    "fields": {
+        "name": "snowboarding",
+        "parent": 3,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 5,
+    "fields": {
+        "name": "skiing",
+        "parent": 3,
+        "lft": 4,
+        "rght": 7,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 6,
+    "fields": {
+        "name": "gymnastics",
+        "parent": null,
+        "lft": 1,
+        "rght": 10,
+        "tree_id": 2,
+        "level": 0
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 7,
+    "fields": {
+        "name": "rhythmic gymnastics",
+        "parent": 6,
+        "lft": 2,
+        "rght": 9,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 8,
+    "fields": {
+        "name": "cycling",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 3,
+        "level": 0
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 9,
+    "fields": {
+        "name": "swimming",
+        "parent": null,
+        "lft": 1,
+        "rght": 8,
+        "tree_id": 4,
+        "level": 0
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 10,
+    "fields": {
+        "name": "ribbon",
+        "parent": 7,
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 11,
+    "fields": {
+        "name": "ski jumping",
+        "parent": 5,
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 12,
+    "fields": {
+        "name": "ice Hockey",
+        "parent": 3,
+        "lft": 8,
+        "rght": 9,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 13,
+    "fields": {
+        "name": "ice Skating",
+        "parent": 3,
+        "lft": 10,
+        "rght": 11,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 14,
+    "fields": {
+        "name": "clubs",
+        "parent": 7,
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 15,
+    "fields": {
+        "name": "hoop",
+        "parent": 7,
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 16,
+    "fields": {
+        "name": "freestyle",
+        "parent": 9,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 17,
+    "fields": {
+        "name": "backstroke",
+        "parent": 9,
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 18,
+    "fields": {
+        "name": "butterfly",
+        "parent": 9,
+        "lft": 6,
+        "rght": 7,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 19,
+    "fields": {
+        "name": "athletics",
+        "parent": null,
+        "lft": 1,
+        "rght": 14,
+        "tree_id": 5,
+        "level": 0
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 20,
+    "fields": {
+        "name": "running",
+        "parent": 19,
+        "lft": 2,
+        "rght": 9,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 21,
+    "fields": {
+        "name": "race walking",
+        "parent": 20,
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 22,
+    "fields": {
+        "name": "javelin",
+        "parent": 19,
+        "lft": 10,
+        "rght": 11,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 23,
+    "fields": {
+        "name": "marathon",
+        "parent": 20,
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 24,
+    "fields": {
+        "name": "relay",
+        "parent": 20,
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 25,
+    "fields": {
+        "name": "hammer throw",
+        "parent": 19,
+        "lft": 12,
+        "rght": 13,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "data_storage.skill",
+    "pk": 26,
+    "fields": {
+        "name": "football",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 6,
+        "level": 0
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 1,
+    "fields": {
+        "name": "World Snowboard Tour",
+        "year": 2010
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 2,
+    "fields": {
+        "name": "World Snowboard Tour",
+        "year": 2011
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 3,
+    "fields": {
+        "name": "FIS Snowboarding World Championship",
+        "year": 2013
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 4,
+    "fields": {
+        "name": "FIS Snowboarding World Championship",
+        "year": 2014
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 5,
+    "fields": {
+        "name": "FIS Snowboarding World Championship",
+        "year": 2015
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 6,
+    "fields": {
+        "name": "FIS Snowboarding World Championship",
+        "year": 2016
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 7,
+    "fields": {
+        "name": "FIS Snowboarding World Championship",
+        "year": 2017
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 8,
+    "fields": {
+        "name": "Winter Olympics",
+        "year": 2014
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 9,
+    "fields": {
+        "name": "FIS race",
+        "year": 2016
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 10,
+    "fields": {
+        "name": "FIS Freestyle World Championship",
+        "year": 2017
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 11,
+    "fields": {
+        "name": "Route du Sud",
+        "year": 2012
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 12,
+    "fields": {
+        "name": "Tour of the Basque Country",
+        "year": 2013
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 13,
+    "fields": {
+        "name": "Tour de France",
+        "year": 2014
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 14,
+    "fields": {
+        "name": "Tour de France",
+        "year": 2015
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 15,
+    "fields": {
+        "name": "Tour de France",
+        "year": 2016
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 16,
+    "fields": {
+        "name": "Tour de France",
+        "year": 2017
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 17,
+    "fields": {
+        "name": "Olympic Games",
+        "year": 2012
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 18,
+    "fields": {
+        "name": "Olympic Games",
+        "year": 2008
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 19,
+    "fields": {
+        "name": "Olympic Games",
+        "year": 2004
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 20,
+    "fields": {
+        "name": "Olympic Games",
+        "year": 2000
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 21,
+    "fields": {
+        "name": "Olympic Games",
+        "year": 1996
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 22,
+    "fields": {
+        "name": "FIFA World Cup",
+        "year": 2014
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 23,
+    "fields": {
+        "name": "FIFA World Cup",
+        "year": 2010
+    }
+},
+{
+    "model": "data_storage.championship",
+    "pk": 24,
+    "fields": {
+        "name": "FIFA World Cup",
+        "year": 2006
+    }
+}
+]
