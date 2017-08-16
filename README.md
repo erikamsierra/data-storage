@@ -1,26 +1,28 @@
 Data Storage is a Django App consisting in a database with information about athletes and an API to search on this data.
 
 It can be launched with Docker and these are the steps to get it up and running:
+````
 $ docker-compose build
 $ docker-compose run ds ds-ctl migrate
 $ docker-compose run ds ds-ctl createsuperuser
 $ docker-compose run ds ds-ctl loaddata sample_data
 $ docker-compose up
+````
 
 The application consists in two parts:
 - <your_domain>/admin: standard django admin site.
 - <your_domain>/api/athletes/search/: search API consisting in a single endpoint.
 
-    USAGE:
-        method: POST
-        body:
-        {
-           "name":  {"value":"Anna Gasser", "match":"exact"},
-           "age": {"value": "18-21"},
-           "skills": {"value":["winter sports","Cycling"]},
-           "years_experience": {"value":10, "match":"exact"},
-           "ids_only": false
-        }
+USAGE:
+    method: POST
+    body:
+    {
+       "name":  {"value":"Anna Gasser", "match":"exact"},
+       "age": {"value": "18-21"},
+       "skills": {"value":["winter sports","Cycling"]},
+       "years_experience": {"value":10, "match":"exact"},
+       "ids_only": false
+    }
 
 All the parameters are optional and can be combined. If none of them is provided all the athletes are returned.
 
