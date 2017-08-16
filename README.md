@@ -14,6 +14,7 @@ The application consists in two parts:
 - <your_domain>/api/athletes/search/: search API consisting in a single endpoint.
 
 USAGE:
+````
     method: POST
     body:
     {
@@ -23,6 +24,7 @@ USAGE:
        "years_experience": {"value":10, "match":"exact"},
        "ids_only": false
     }
+````
 
 All the parameters are optional and can be combined. If none of them is provided all the athletes are returned.
 
